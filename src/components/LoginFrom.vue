@@ -1,13 +1,13 @@
 <template>
     <div class="container">
-        <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; margin-top: 50px; margin-bottom: 200px; width: 50%;">
-            <img src="../assets/Logo.png" alt="tradeInLogo" width="125" height="60" />
+        <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; margin-top: 50px; margin-bottom: 150px; width: 50%;">
+            <img src="../assets/Logo.png" alt="tradeInLogo"/>
         </div>
         <form style="width: 50%;" @submit.prevent="handleSubmit">
             <div class="form">
                 <div>
-                    <h2 style="margin: 2px;">Welcome back</h2>
-                    <p style="margin: 2px; padding-left: 2px;">Welcome back! Please enter your details.</p>
+                    <h2 style="margin: 2px; font-family: Helvetica, sans-serif;">Welcome back</h2>
+                    <p style="margin: 2px; padding-left: 2px; font-family: Helvetica, sans-serif">Welcome back! Please enter your details.</p>
                 </div>
                 <div>
                   <input class="form-input" type="email" required v-model="email" placeholder="Enter your email"/>
@@ -16,7 +16,7 @@
                     <div v-if="passwordError" style="color: red;">{{ passwordError }}</div>
                     <!-- <font-awesome-icon icon="eye" class="password-toggle" @click="togglePasswordVisibility" /> -->
                 </div>
-                    <div style="display: flex; flex-flow: row; justify-content: space-between; align-content: center;">
+                    <div style="display: flex; flex-flow: row; justify-content: space-between; align-content: center; width: 105%;">
                         <div>
                             <input type="checkbox" v-model="memory"/>
                             <label style=" font-size: medium;">Remember for 30 days</label>
@@ -27,16 +27,16 @@
                     </div>
                 </div>
                     <div>
-                        <button style="width: 100%; height: 50px; background-color: blue; color: white; border-radius: 5px;margin: 5px; align: center; border: 1px;">GET STARTED</button>
-                        <button style="width: 100%; height: 50px; background-color: whitesmoke; font-size: 16px; border-radius: 5px; margin: 5px; border: 1px solid black;">
-                             Sign in with Google
+                        <button style="width: 104%; height: 50px; background-color: blue; color: white; border-radius: 5px;margin: 5px; align: center; border: 1px;">GET STARTED</button>
+                        <button style="width: 104%; height: 50px; background-color: whitesmoke; font-size: 16px; border-radius: 5px; margin: 5px; border: 1px solid black; display: flex; justify-content: center; align-items: center;">
+                            <img src="../assets/google.png" alt="tradeInLogo"/><p style="font-size: 14px; font-family: Helvetica, sans-serif; margin: 8px;">Sign in with Google</p>
                         </button>
-                        <p style="text-align: center; font-size: medium;">Don't have an account? <span @click="goToSignup">Sign up.</span></p>
+                        <p style="text-align: center; font-size: medium;">Don't have an account? <span style="color: blue;" @click="goToSignup">Sign up.</span></p>
                     </div>                
             </div>
         </form>
         <div class="bottom">
-            <p style="text-align: center; font-size: smaller; margin-top: 150px;">Copyright &copy; 2021. All rights reserved. Websites Designed by TradeIn.</p>
+            <p style="text-align: center; font-size: small; margin-top: 100px;">Copyright &copy; 2021. All rights reserved. Websites Designed by TradeIn.</p>
         </div>
     </div>
 </template>
@@ -91,17 +91,18 @@ export default {
         flex-flow: column;
         align-items: center;
         text-align: left;
+        font-family: Helvetica, sans-serif
     }
     .form-input {
         border: 1px solid #CCCCCC;
         height: 40px;
         width: 100%;
-        background-color:whitesmoke;
-        
+        background-color:whitesmoke; 
         padding: 5px;
         margin: 10px;
         font-size: 14px;
         border-radius: 10px;
+        font-family: Helvetica, sans-serif
     }
 
     .login-button {
@@ -112,11 +113,13 @@ export default {
         border-radius: 5px;
         margin: 5px;
         border: 1px;
+        font-family: Helvetica, sans-serif
 
     }
     .bottom {
-        margin-top: 200px;
+        margin-top: 150px;
         margin-bottom: 10px;
+        font-family: Helvetica, sans-serif
     }
     
 </style>

@@ -3,8 +3,8 @@
         <div style="width: 50%;">
             <SignUpForm/>
         </div>
-        <div style="width: 50%;height: 100vh;">
-            <img src="../assets/graphic.png" alt="tradeInLogo" style="width: 100%; height: max-content; object-fit: cover"/>
+        <div>
+            <img src="../assets/Section.png" alt="tradeInLogo" style="width: 100%; height: max-content; object-fit: cover"/>
         </div>
     </div>
     

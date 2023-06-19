@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; margin-top: 30px; margin-bottom: 100px; width: 50%;">
-            <img src="../assets/Logo.png" alt="tradeInLogo" width="125" height="60" />
+        <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; margin-top: 20px; margin-bottom: 50px; width: 50%;">
+            <img src="../assets/Logo.png" alt="tradeInLogo" />
         </div>
         <form style="width: 50%;" @submit.prevent="handleSubmit">
             <div class="form">
@@ -10,7 +10,7 @@
                     <p style="margin: 2px; padding-left: 2px;">Create your account for free.</p>
                 </div>
                 <div>
-                <div style="display: flex; flex-flow: row; justify-content: space-evenly;">
+                <div style="display: flex; flex-flow: row; justify-content: space-between; width: 110%;">
                     <input class="form-input" type="string" required placeholder="First Name*"/>
                     <input class="form-input" type="string" required placeholder="Last name*"/>
                 </div>
@@ -18,18 +18,22 @@
                   <input class="form-input" type="number" required placeholder="Enter your phone number"/>
                     <div>
                         <input class="form-input" type="password" required v-model="password" placeholder="Create password"/>
-                        <p style="font-size: medium; margin-top: 1px; margin-left: 3px;">Must be atleast 8 characters.</p>
+                        <p style="font-size: small; margin-top: 1px; margin-left: 3px; font-family: Helvetica, sans-serif;">Must be atleast 8 characters.</p>
                     </div>
-                    <p style="text-align: left; font-size: medium"> Vous aves un code promo?</p>
-                    <input type="checkbox" required>
-                    <label style="font-size: medium;">By clicking I agree to <a href="TradeIn's Terms and Conditions">TradeIn's Terms and Conditions</a> and acknowlege that I have read and understood <a href="TradeIn's Privacy statement.">TradeIn's Privacy statement.</a></label><br>
-                    <input type="checkbox">
-                    <label style="font-size: medium;">Yes, I would like to keep in touch.</label>
+                    <div style="width: 110%;">
+                        <p style="text-align: left; font-size: small; font-family: Helvetica, sans-serif;" > Vous aves un code promo?</p>
+                        <input type="checkbox" required>
+                        <label style="font-size: small; font-family:Helvetica, sans-serif;">By clicking I agree to <a href="TradeIn's Terms and Conditions">TradeIn's Terms and Conditions</a> and acknowlege that I have read and understood <a href="TradeIn's Privacy statement.">TradeIn's Privacy statement.</a></label><br>
+                        <input type="checkbox">
+                        <label style="font-size: small; font-family: Helvetica, sans-serif;">Yes, I would like to keep in touch.</label>
+                    </div>
                 </div>
                     <div>
-                        <button style="width: 100%; height: 50px; background-color: blue; color: white; border-radius: 5px;margin: 5px; align: center; border: 1px;">GET STARTED</button>
-                        <button style="width: 100%; height: 50px; background-color: whitesmoke; font-size: 16px; border-radius: 5px; margin: 5px; border: 1px solid black;">Sign up with Google</button>
-                        <p style="text-align: center; font-size: medium;">Already have an account? <span @click="goToSignin">Sign in.</span></p>
+                        <button style="width: 104%; height: 50px; background-color: blue; color: white; border-radius: 5px;margin: 5px; align: center; border: 1px;">GET STARTED</button>
+                        <button style="width: 104%; height: 50px; background-color: whitesmoke; font-size: 16px; border-radius: 5px; margin: 5px; border: 1px solid black; display: flex; justify-content: center; align-items: center;">
+                            <img src="../assets/google.png" alt="tradeInLogo"/><p style="font-size: 14px; font-family: Helvetica, sans-serif; margin: 8px;">Sign in with Google</p>
+                        </button>
+                        <p style="text-align: center; font-size: medium; font-family: Helvetica, sans-serif;">Already have an account? <span style="color: blue; font-size: medium; font-family: Helvetica, sans-serif;" @click="goToSignin">Sign in.</span></p>
                     </div>                
             </div>
         </form>
@@ -98,7 +102,7 @@ export default {
 
     }
     .bottom {
-        margin-top: 100px;
+        margin-top: 120px;
         margin-bottom: 10px;
     }
     

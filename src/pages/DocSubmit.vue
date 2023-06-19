@@ -2,20 +2,26 @@
     <Navbar />
     <div style="display: flex; justify-content: space-between">
         <div style="width: 30%;">
-            <h1 style="display: flex; align-items: center; justify-content: baseline; margin: 40px; color: lightgray;">
-                <button style="background-color: aliceblue; border-color: whitesmoke; border-radius: 20px; height: 40px; width: 40px; margin: 5px; color:  lightgray;"> 1</button>
+            <h1 style="display: flex; align-items: center; justify-content: baseline; margin: 40px; margin-bottom: 20px; font-family: Helvetica, sans-serif; font-size: 24px;color: #212121; font-weight: 600;">
+                <div style="position: relative; display: inline-block; margin-right: 20px;">
+                    <img src="../assets/tickCircle.png" alt="tradeInLogo" width="40px" height="40px">
+                    <img src="../assets/tick.png" alt="tradeInLogo" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                </div>
                 Information Review
             </h1>
-            <p style="display: flex; width: 60%; font-weight: 500; font-size: larger; color: lightgray; margin-left: 80px;">
-                Lorem ipsum dolor sit amet, consectetur adipiscn. Sed id ipsum vitae diam viverra aliquam. Curabitur cursus tortor sit amet magna malesuada, id volutpat ligula faucibus. Nulla facilis
+            <p style="display: flex; width: 80%; font-weight: 400; font-size: larger; color: black; margin-left: 90px ; letter-spacing: 0.15px;">
+                Sit tristique eget proin a sem. Dui risus ultricies at vel consectetur volutpat ornare netus id.
             </p>
-            <h1 style="display: flex; align-items: center; justify-content: baseline; margin: 40px;">
-                <button style="background-color: aliceblue; border-color:white; border-radius: 20px; height: 40px; width: 40px;  margin: 5px;"> 2</button>
+            <h1 style="display: flex; align-items: center; justify-content: baseline; margin: 40px; margin-bottom: 20px; color: #003DA5; font-family: Helvetica, sans-serif; font-size: 24px;">
+                <div style="position: relative; display: inline-block; margin-right: 20px ">
+                    <img src="../assets/bluecircle.png" alt="tradeInLogo" width="40px" height="40px">
+                    <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; color: white; text-align: center; width: 100%; align-items: center;">2</span>
+                </div>
                 Upload Documents
             </h1>
-            <p style="display: flex; width: 60%; font-weight: 500; font-size: larger; color: black; margin-left: 80px;">
-                Lorem ipsum dolor sit amet, consectetur adipiscn. Sed id ipsum vitae diam viverra aliquam. Curabitur cursus tortor sit amet magna malesuada, id volutpat ligula faucibus. Nulla facilis
-            </p>        
+            <p style="display: flex; width: 70%; font-weight: 400; font-size: larger; color: black; margin-left: 90px;">
+                Vel consectetur ut enim eu amet cras non risus pellentesque. Faucibus sagittis et facilisi tristique quam id.       
+            </p>
         </div>
         <div>
             <DocForm/>

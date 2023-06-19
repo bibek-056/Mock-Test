@@ -7,22 +7,25 @@
                     <p style="font-size: medium; font-weight: 100; margin-left: 10px; margin-top: 2px; margin-bottom: 2px;">Manage and Access your enterprizes.</p>
                 </div>
                 <div style="display: flex; align-items: center; margin-right: 30px;">
-                    <button class="card-button" @click="goToRegistration"> + Add New Organization</button>
+                    <button class="card-button" @click="goToRegistration"> <img src="../assets/plus.png" alt="tradeInLogo"/> Add New Organization</button>
                 </div>
             </div>
             <hr/>
             <div v-if="storedLoginState"  class="enterprise">
-                <div style="display: flex; align-items: center; width: 15%;">
-                    <button style="border-color:gray; border-width: 2px; border-radius: 20px; height: 40px; width: 40px;"><font-awesome-icon icon="building" /></button>
+                <div style="display: flex; align-items: center; width: 15%; justify-content: center;">
+                    <div style="position: relative; display: inline-block; margin-right: 15px;">
+                        <img src="../assets/whitecircle.png" alt="tradeInLogo">
+                        <img src="../assets/building.png" alt="tradeInLogo" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    </div>
                 </div>
-                <div style="display: flex; flex-flow: column; align-items: flex-start; width: 55%;">
-                    <h1 style="font-size: larger; margin: 2px;">{{  displayName }}</h1>
-                    <h5 style="font-size: medium; margin: 2px;"> Created at: {{displayDate}} </h5>
-                    <h5 style="font-size: medium; margin: 2px;"> Siret ID: {{ ID }}</h5>
+                <div style="display: flex; flex-flow: column; align-items: flex-start; width: 60%;">
+                    <h1 style="font-size: 18px; margin: 2px; font-family: Helvetica, sans-serif; font-weight: 500; color: #212121; line-height: 19.12px;">{{  displayName }}</h1>
+                    <h5 style="font-size: 14px; margin: 2px; font-family: Helvetica, sans-serif; font-weight: 500; line-height: 18px; color: #959595;"> Created at: {{displayDate}} </h5>
+                    <h5 style="font-size: 14px; margin: 2px; font-family: Helvetica, sans-serif; font-weight: 500; line-height: 18px; color: #959595;"> ID: {{ ID }}</h5>
                 </div>
-                <div style="display: flex; justify-content: space-evenly; align-items: center;width: 30%;">
-                    <button style="border-color:blue; border-width: 2px; border-radius: 5px; height: 40px; width: 140px;">Manage</button>
-                    <button style="border-color:blue; border-width: 2px; border-radius: 5px; height: 40px; width: 40px;"><font-awesome-icon icon="bars" /></button>
+                <div style="display: flex; justify-content: space-evenly; align-items: center;width: 25%;">
+                    <button style="border-color:#1D3999; border-width: 1px; border-radius: 8px; height: 39px; width: 84px;">Manage</button>
+                    <button style="border-color:#1D3999; border-width: 1px; border-radius: 8px; height: 39px; width: 42px;"><img src="../assets/elipices.png" alt="tradeInLogo"/></button>
                 </div>
             </div>
         </div>
@@ -81,11 +84,20 @@
         background-color:white;
         border-radius: 4px;
         box-shadow: 0 2px 4px rgba(1, 1, 1, 1);
-        width: 60%;
+        width: 901px;
         height: max-content;
         border-color: black;
         border-width: 2px;
         justify-content: space-between;
+        font-family: Avenir, Helvetica, sans-serif;
+        /* height: 129px;
+        width: 901px;
+        left: 269.5px;
+        top: 75px;
+        border-radius: 8px;
+        padding: 24px 49px 24px 49px;
+        box-shadow: 0px 2px 8px 0px #2D3E501F;
+        margin-top: 20px; */
     }
 
     .header {
@@ -95,14 +107,17 @@
 
     .card-button {
         display: inline-block;
-        height: 30%;
-        width: max-content;
+        height: 39px;
+        width: 206px;
         padding: 6px 12px;
-        background-color: rgb(10, 10, 187);
+        background-color: #1D3999;
+        border-bottom: #1D3999;
+        border: 1px;
         color: #fff;
         text-decoration: none;
-        border-radius: 15px;
+        border-radius: 8px;
         margin: 5px;
+        font-family: Helvetica, sans-serif;
     }
 
     hr {
