@@ -2,7 +2,7 @@
     <Navbar />
     <div style="display: flex; justify-content: space-between">
         <div style="width: 30%;">
-            <h1 style="display: flex; align-items: center; justify-content: baseline; margin: 40px; margin-bottom: 20px; font-family: Helvetica, sans-serif; font-size: 24px;color: #212121; font-weight: 600;">
+            <h1 style="display: flex; align-items: center; justify-content: baseline; margin: 40px; margin-bottom: 20px; font-size: 24px;color: #212121; font-weight: 600;">
                 <div style="position: relative; display: inline-block; margin-right: 20px;">
                     <img src="../assets/tickCircle.png" alt="tradeInLogo" width="40px" height="40px">
                     <img src="../assets/tick.png" alt="tradeInLogo" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
@@ -12,7 +12,7 @@
             <p style="display: flex; width: 80%; font-weight: 400; font-size: larger; color: black; margin-left: 90px ; letter-spacing: 0.15px;">
                 Sit tristique eget proin a sem. Dui risus ultricies at vel consectetur volutpat ornare netus id.
             </p>
-            <h1 style="display: flex; align-items: center; justify-content: baseline; margin: 40px; margin-bottom: 20px; color: #003DA5; font-family: Helvetica, sans-serif; font-size: 24px;">
+            <h1 style="display: flex; align-items: center; justify-content: baseline; margin: 40px; margin-bottom: 20px; color: #003DA5; font-size: 24px;">
                 <div style="position: relative; display: inline-block; margin-right: 20px ">
                     <img src="../assets/bluecircle.png" alt="tradeInLogo" width="40px" height="40px">
                     <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; color: white; text-align: center; width: 100%; align-items: center;">2</span>

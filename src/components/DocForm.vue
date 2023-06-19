@@ -13,11 +13,11 @@
                     </div>
                     <h2 style="font-size: 24px; font-weight: 600; margin-left: 20px;"> Upload Documents</h2>
                 </div>
-                <p style="font-size: large; font-weight: 500; margin-left: 20px; text-align: left; color: #959595;"> With this information, we confirm your identity and anlyze your customers in order to issue your price offer.</p>
+                <p style="font-size: 18px; font-weight: 400; margin-left: 20px; text-align: left; color: #959595;"> With this information, we confirm your identity and anlyze your customers in order to issue your price offer.</p>
             </div>
             <div class="card2">
-                <h3 style="display: block; text-align: left; margin: 10px; margin-left: 25px;"> Document Upload</h3>
-                <hr />
+                <h3 style="display: block; text-align: left; margin-top: 15px; margin-left: 24px; margin-bottom: 11px;"> Document Upload</h3>
+                <hr style="width: 699px; height: 2px; color: #E7E7E7; margin: 0px;" />
                 <div class="docfield">
                     <div class="unitdoc">
                         <img src="../assets/docs.png" alt="tradeInLogo"/>
@@ -84,11 +84,12 @@ export default {
         border: 2px dashed black;
         display: flex;
         flex-direction: column;
-        border-radius: 5px;
+        border-radius: 8px;
         align-items: center;
         justify-content: space-between;
         margin: 5px;
-        width: 30%;
+        width: 200px;
+        height: 139px;
         border-color: #BEBEBE;
         background-color: #F6F8FB;
         font-family: Helvetica, sans-serif;
@@ -99,14 +100,14 @@ export default {
         display: flex;
         flex-flow: column;
         margin: 20px;
-        background-color:white;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(1, 1, 1, 1);
-        width: 100%;
-        height: max-content;
+        background-color:#FFFFFF;
+        width: 699px;
+        height: fit-content;
         border-color: black;
         border-width: 2px;
+        border-radius: 8px;
         justify-content: space-between;
+        box-shadow: 0px 2px 8px 0px #2D3E501F;
         font-family: Helvetica, sans-serif;
     }
 

@@ -1,13 +1,21 @@
 <template>
     <div class="navbar">
-        <img src="../assets/dots.png" alt="tradeInLogo"/>
+        <div style="width: 5%;">
+            <img src="../assets/dots.png" alt="tradeInLogo"/>
+        </div>
         <div style="display: flex; justify-content: space-between; width: 18%; align-items: center;">
-            <img src="../assets/building.png" alt="tradeInLogo"/>
-            <h5 style="font-size: medium; color: white;">{{ loginState.email }}</h5>
+            <div style="position: relative; display: inline-block;">
+                <img src="../assets/plaincircle.png" alt="tradeInLogo" />
+                <img src="../assets/building.png" alt="tradeInLogo" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" />
+            </div>
+            <h5 style="font-size: 14px; font-weight: 900; color: #FFFFFF; line-height: 22.4px;"> SOBEM SCAME</h5>
             <img src="../assets/caretdown.png" alt="tradeInLogo"/>
         </div>
-        <input class="searchbar" type="text" placeholder="Research a client or an invoice" />   
-        <div style="align-items: center; display: flex; width: 7%; justify-content: space-between">
+        <div style="position: relative;">
+            <input class="searchbar" type="string" placeholder="Research a client or an invoice" />
+            <img src="../assets/search.png" alt="tradeInLogo" style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%);" />
+        </div>
+        <div style="align-items: center; display: flex; width: 8%; justify-content: space-between">
             <img src="../assets/bell.png" alt="tradeInLogo"/>
             <p style="color: white;"> Alert (0) </p>
             <img src="../assets/caretdown.png" alt="tradeInLogo"/>
@@ -54,17 +62,18 @@ export default {
         align-items: center;
         justify-content: space-around;
         margin-top: 0px;
-        font-family: Helvetica, sans-serif;
     }
     .searchbar {
         display: block;
-        width: 30%;
-        border-radius: 50px;
-        height: 80%;
+        width: 515px;
+        border-radius: 55px;
+        height: 40px;
         border-color: none;
+        color: black;
+        border: 0px;
         margin: 1px;
-        opacity: 0.5;
-        font-family: Helvetica, sans-serif;
+        opacity: 0.6;
+        padding-left: 40px;
     }
 
 </style>

@@ -130,19 +130,16 @@ export default {
     background-color: whitesmoke;
     display: flex;
     flex-flow: column;
-    font-family: Helvetica, sans-serif;
 }
 
 .formrow {
     display: flex;
     margin-left: 15px;
-    font-family: Helvetica, sans-serif;
 }
 
 .formunit {
     margin: 10px;
     width: 50%;
-    font-family: Helvetica, sans-serif;
 }
 
 </style>

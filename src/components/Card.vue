@@ -3,7 +3,7 @@
         <div class="card">
             <div class="header">
                 <div style="display: flex; flex-flow: column; margin-left: 30px; margin-right: 30px; margin-top: 30px; margin-bottom: 30px;">
-                    <h5 style="font-size: larger;font-weight: 7000; margin-left: 10px; margin-bottom: 2px; margin-top: 10px; margin-right: 2px;">My enterprises</h5>
+                    <h5 style="font-size: 24px;font-weight: 500; margin-left: 10px; margin-bottom: 2px; margin-top: 10px; margin-right: 2px;">My enterprises</h5>
                     <p style="font-size: medium; font-weight: 100; margin-left: 10px; margin-top: 2px; margin-bottom: 2px;">Manage and Access your enterprizes.</p>
                 </div>
                 <div style="display: flex; align-items: center; margin-right: 30px;">
@@ -19,9 +19,9 @@
                     </div>
                 </div>
                 <div style="display: flex; flex-flow: column; align-items: flex-start; width: 60%;">
-                    <h1 style="font-size: 18px; margin: 2px; font-family: Helvetica, sans-serif; font-weight: 500; color: #212121; line-height: 19.12px;">{{  displayName }}</h1>
-                    <h5 style="font-size: 14px; margin: 2px; font-family: Helvetica, sans-serif; font-weight: 500; line-height: 18px; color: #959595;"> Created at: {{displayDate}} </h5>
-                    <h5 style="font-size: 14px; margin: 2px; font-family: Helvetica, sans-serif; font-weight: 500; line-height: 18px; color: #959595;"> ID: {{ ID }}</h5>
+                    <h1 style="font-size: 18px; margin: 2px; font-weight: 500; color: #212121; line-height: 19.12px;">{{  displayName }}</h1>
+                    <h5 style="font-size: 14px; margin: 2px; font-weight: 500; line-height: 18px; color: #959595;"> Created at: {{displayDate}} </h5>
+                    <h5 style="font-size: 14px; margin: 2px; font-weight: 500; line-height: 18px; color: #959595;"> ID: {{ ID }}</h5>
                 </div>
                 <div style="display: flex; justify-content: space-evenly; align-items: center;width: 25%;">
                     <button style="border-color:#1D3999; border-width: 1px; border-radius: 8px; height: 39px; width: 84px;">Manage</button>
@@ -83,7 +83,7 @@
         margin: 20px;
         background-color:white;
         border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(1, 1, 1, 1);
+        box-shadow: 0px 2px 8px 0px #2D3E501F;
         width: 901px;
         height: max-content;
         border-color: black;
@@ -117,13 +117,12 @@
         text-decoration: none;
         border-radius: 8px;
         margin: 5px;
-        font-family: Helvetica, sans-serif;
     }
 
     hr {
         display: block; /* Ensures it is a block-level element */
         width: 100%; /* Expands to the full width of the container */
-        margin: 10px; /* Resets any default margins */
+        margin: 2px; /* Resets any default margins */
         align-self: center;
         border: none;
         border-top: 1px solid rgb(144, 121, 121); /* Creates a horizontal line */
